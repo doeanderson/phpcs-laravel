@@ -1,17 +1,21 @@
 {
-    "name": "emielmolenaar/phpcs-laravel",
+    "name": "doeanderson/phpcs-laravel",
     "type": "phpcodesniffer-standard",
     "description": "PHPCS libraries and configuration for Laravel",
     "keywords": [
         "phpcs",
         "laravel"
     ],
-    "homepage": "https://github.com/emielmolenaar/phpcs-laravel",
+    "homepage": "https://github.com/doeanderson/phpcs-laravel",
     "license": "Unlicense",
     "authors": [
         {
             "name": "Emiel Molenaar",
             "email": "emiel.molenaar@gmail.com"
+        },
+        {
+            "name": "Doe-Anderson",
+            "email": "digital@doeanderson.com"
         }
     ],
     "require": {
