@@ -68,10 +68,6 @@
     <rule ref="PSR2.Namespaces.NamespaceDeclaration"/>
     <rule ref="PSR2.Namespaces.UseDeclaration"/>
     <rule ref="Zend.Files.ClosingTag"/>
-    <rule ref="Generic">
-        <exclude-pattern>*.php</exclude-pattern>
-        <exclude name="Generic.Strings.UnnecessaryStringConcat.Found)"/>
-    </rule>
 
     <rule ref="Squiz.Arrays.ArrayDeclaration">
         <exclude name="Squiz.Arrays.ArrayDeclaration.ValueNotAligned" />
