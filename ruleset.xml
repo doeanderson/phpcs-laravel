@@ -116,7 +116,7 @@
     <exclude-pattern>*/Providers/*</exclude-pattern>
 
     <arg name="colors"/>
-    <arg value="spvnl"/>
+    <arg value="spvn"/>
     <ini name="memory_limit" value="128M"/>
 
     <rule ref="PSR2"/>
