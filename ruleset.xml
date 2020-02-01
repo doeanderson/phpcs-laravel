@@ -80,6 +80,8 @@
         <exclude name="Squiz.Arrays.ArrayDeclaration.SingleLineNotAllowed" />
     </rule>
 
+    <rule ref="Generic.Formatting.SpaceAfterNot" />
+
     <file>app</file>
     <file>config</file>
     <file>public</file>
