@@ -3,7 +3,17 @@
 
 ## Global Installation
 
-To globally install this custom standard along with `phpcs` and `phpcbf`, run the following command.
+To globally install this custom standard along with `phpcs` and `phpcbf`, add the following to your `~/.composer/composer.json` file.
+
+```json
+"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/doeanderson/phpcs-laravel"
+        }
+    ],
+```
+Then run the following command.
 
 ```shell
 composer global require doeanderson/phpcs-laravel
@@ -23,7 +33,7 @@ Add the following to your project's `composer.json` file.
     ],
 ```
 
-Then run the following command
+Then run the following command.
 ```shell
 composer require --dev doeanderson/phpcs-laravel
 ```
