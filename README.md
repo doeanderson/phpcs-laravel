@@ -1,18 +1,33 @@
 
-# Emiel Molenaar's PHPCS Configuration 
+# phpcs-laravel configuration
 
-I use this package to set up a consistent PHPCS configuration across my Laravel projects. The ruleset is based on [@nandosalles' ruleset](https://medium.com/@nandosalles/the-ruleset-phpcs-for-my-laravel-projects-a54cb3c95b31).
+## Global Installation
 
-If you wish to use this configuration in your project, install it using composer:
+To globally install this custom standard along with `phpcs` and `phpcbf`, run the following command.
 
-`composer require --dev emielmolenaar/phpcs-laravel` 
+```shell
+composer global require doeanderson/phpcs-laravel
+phpcs -i
+```
+You should now see the `phpcs-laravel` standard listed.
 
-Afterwards, you may run `php vendor/bin/phpcs -i` and see `phpcs-laravel` listed as an installed ruleset.
+## Installation per project
 
-You may now use the ruleset like so:
+Add the following to your project's `composer.json` file.
+```json
+"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/doeanderson/phpcs-laravel"
+        }
+    ],
+```
 
-`php vendor/bin/phpcs --standard=phpcs-laravel my_file.php`
+Then run the following command
+```shell
+composer require --dev doeanderson/phpcs-laravel
+```
+Copy the contents of `phpcs.xml.dist` from this repo to your project's root folder as `phpcs.xml`.
 
-_Note_, If you're installing globally with Composer you can simply do `phpcs -i`.
+Now you may run `./vendor/bin/phpcs` to scan your entire project or `./vendor/bin/phpcbf` to automatically fix/beautify files.
 
-Contributions welcome.
